@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A15E4961418EFFF00352873 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A15E4951418EFFF00352873 /* UIKit.framework */; };
+		1A15E4981418EFFF00352873 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A15E4971418EFFF00352873 /* Foundation.framework */; };
+		1A15E49A1418EFFF00352873 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A15E4991418EFFF00352873 /* CoreGraphics.framework */; };
+		1A15E4A01418EFFF00352873 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A15E49E1418EFFF00352873 /* InfoPlist.strings */; };
+		1A15E4A21418EFFF00352873 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A15E4A11418EFFF00352873 /* main.m */; };
+		1A15E4A61418F00000352873 /* JTImageKitAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A15E4A51418F00000352873 /* JTImageKitAppDelegate.m */; };
+		1A15E4AA1418F00000352873 /* JTImageKitAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A15E4A91418F00000352873 /* JTImageKitAppDelegate_iPhone.m */; };
+		1A15E4AD1418F00000352873 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A15E4AB1418F00000352873 /* MainWindow_iPhone.xib */; };
+		1A15E4B11418F00000352873 /* JTImageKitAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A15E4B01418F00000352873 /* JTImageKitAppDelegate_iPad.m */; };
+		1A15E4B41418F00000352873 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A15E4B21418F00000352873 /* MainWindow_iPad.xib */; };
+		1A15E4BC1418F00000352873 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A15E4BB1418F00000352873 /* SenTestingKit.framework */; };
+		1A15E4BD1418F00000352873 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A15E4951418EFFF00352873 /* UIKit.framework */; };
+		1A15E4BE1418F00000352873 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A15E4971418EFFF00352873 /* Foundation.framework */; };
+		1A15E4BF1418F00000352873 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A15E4991418EFFF00352873 /* CoreGraphics.framework */; };
+		1A15E4C71418F00100352873 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A15E4C51418F00100352873 /* InfoPlist.strings */; };
+		1A15E4C91418F00100352873 /* JTImageKitTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 1A15E4C81418F00100352873 /* JTImageKitTests.h */; };
+		1A15E4CB1418F00100352873 /* JTImageKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A15E4CA1418F00100352873 /* JTImageKitTests.m */; };
+		1A15E4D71418F01B00352873 /* UIImage+JTImageCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A15E4D61418F01B00352873 /* UIImage+JTImageCrop.m */; };
+		1A15E4D91418F04900352873 /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A15E4D81418F04900352873 /* sample.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A15E4C01418F00000352873 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A15E4881418EFFF00352873 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A15E4901418EFFF00352873;
+			remoteInfo = JTImageKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A15E4911418EFFF00352873 /* JTImageKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTImageKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A15E4951418EFFF00352873 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1A15E4971418EFFF00352873 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A15E4991418EFFF00352873 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1A15E49D1418EFFF00352873 /* JTImageKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JTImageKit-Info.plist"; sourceTree = "<group>"; };
+		1A15E49F1418EFFF00352873 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A15E4A11418EFFF00352873 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A15E4A31418F00000352873 /* JTImageKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JTImageKit-Prefix.pch"; sourceTree = "<group>"; };
+		1A15E4A41418F00000352873 /* JTImageKitAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTImageKitAppDelegate.h; sourceTree = "<group>"; };
+		1A15E4A51418F00000352873 /* JTImageKitAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTImageKitAppDelegate.m; sourceTree = "<group>"; };
+		1A15E4A81418F00000352873 /* JTImageKitAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JTImageKitAppDelegate_iPhone.h; path = iPhone/JTImageKitAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		1A15E4A91418F00000352873 /* JTImageKitAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JTImageKitAppDelegate_iPhone.m; path = iPhone/JTImageKitAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		1A15E4AC1418F00000352873 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		1A15E4AF1418F00000352873 /* JTImageKitAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JTImageKitAppDelegate_iPad.h; path = iPad/JTImageKitAppDelegate_iPad.h; sourceTree = "<group>"; };
+		1A15E4B01418F00000352873 /* JTImageKitAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JTImageKitAppDelegate_iPad.m; path = iPad/JTImageKitAppDelegate_iPad.m; sourceTree = "<group>"; };
+		1A15E4B31418F00000352873 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		1A15E4BA1418F00000352873 /* JTImageKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTImageKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A15E4BB1418F00000352873 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		1A15E4C41418F00100352873 /* JTImageKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JTImageKitTests-Info.plist"; sourceTree = "<group>"; };
+		1A15E4C61418F00100352873 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A15E4C81418F00100352873 /* JTImageKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTImageKitTests.h; sourceTree = "<group>"; };
+		1A15E4CA1418F00100352873 /* JTImageKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTImageKitTests.m; sourceTree = "<group>"; };
+		1A15E4D51418F01B00352873 /* UIImage+JTImageCrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JTImageCrop.h"; sourceTree = "<group>"; };
+		1A15E4D61418F01B00352873 /* UIImage+JTImageCrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JTImageCrop.m"; sourceTree = "<group>"; };
+		1A15E4D81418F04900352873 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A15E48E1418EFFF00352873 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A15E4961418EFFF00352873 /* UIKit.framework in Frameworks */,
+				1A15E4981418EFFF00352873 /* Foundation.framework in Frameworks */,
+				1A15E49A1418EFFF00352873 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A15E4B61418F00000352873 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A15E4BC1418F00000352873 /* SenTestingKit.framework in Frameworks */,
+				1A15E4BD1418F00000352873 /* UIKit.framework in Frameworks */,
+				1A15E4BE1418F00000352873 /* Foundation.framework in Frameworks */,
+				1A15E4BF1418F00000352873 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A15E4861418EFFF00352873 = {
+			isa = PBXGroup;
+			children = (
+				1A15E49B1418EFFF00352873 /* JTImageKit */,
+				1A15E4C21418F00000352873 /* JTImageKitTests */,
+				1A15E4941418EFFF00352873 /* Frameworks */,
+				1A15E4921418EFFF00352873 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A15E4921418EFFF00352873 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A15E4911418EFFF00352873 /* JTImageKit.app */,
+				1A15E4BA1418F00000352873 /* JTImageKitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A15E4941418EFFF00352873 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A15E4951418EFFF00352873 /* UIKit.framework */,
+				1A15E4971418EFFF00352873 /* Foundation.framework */,
+				1A15E4991418EFFF00352873 /* CoreGraphics.framework */,
+				1A15E4BB1418F00000352873 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A15E49B1418EFFF00352873 /* JTImageKit */ = {
+			isa = PBXGroup;
+			children = (
+				1A15E4D41418F01B00352873 /* JTImageCrop */,
+				1A15E4A41418F00000352873 /* JTImageKitAppDelegate.h */,
+				1A15E4A51418F00000352873 /* JTImageKitAppDelegate.m */,
+				1A15E4A71418F00000352873 /* iPhone */,
+				1A15E4AE1418F00000352873 /* iPad */,
+				1A15E49C1418EFFF00352873 /* Supporting Files */,
+			);
+			path = JTImageKit;
+			sourceTree = "<group>";
+		};
+		1A15E49C1418EFFF00352873 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A15E49D1418EFFF00352873 /* JTImageKit-Info.plist */,
+				1A15E49E1418EFFF00352873 /* InfoPlist.strings */,
+				1A15E4A11418EFFF00352873 /* main.m */,
+				1A15E4A31418F00000352873 /* JTImageKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A15E4A71418F00000352873 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				1A15E4A81418F00000352873 /* JTImageKitAppDelegate_iPhone.h */,
+				1A15E4A91418F00000352873 /* JTImageKitAppDelegate_iPhone.m */,
+				1A15E4AB1418F00000352873 /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		1A15E4AE1418F00000352873 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				1A15E4AF1418F00000352873 /* JTImageKitAppDelegate_iPad.h */,
+				1A15E4B01418F00000352873 /* JTImageKitAppDelegate_iPad.m */,
+				1A15E4B21418F00000352873 /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		1A15E4C21418F00000352873 /* JTImageKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A15E4C81418F00100352873 /* JTImageKitTests.h */,
+				1A15E4CA1418F00100352873 /* JTImageKitTests.m */,
+				1A15E4C31418F00000352873 /* Supporting Files */,
+			);
+			path = JTImageKitTests;
+			sourceTree = "<group>";
+		};
+		1A15E4C31418F00000352873 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A15E4D81418F04900352873 /* sample.png */,
+				1A15E4C41418F00100352873 /* JTImageKitTests-Info.plist */,
+				1A15E4C51418F00100352873 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A15E4D41418F01B00352873 /* JTImageCrop */ = {
+			isa = PBXGroup;
+			children = (
+				1A15E4D51418F01B00352873 /* UIImage+JTImageCrop.h */,
+				1A15E4D61418F01B00352873 /* UIImage+JTImageCrop.m */,
+			);
+			path = JTImageCrop;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A15E4901418EFFF00352873 /* JTImageKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A15E4CE1418F00100352873 /* Build configuration list for PBXNativeTarget "JTImageKit" */;
+			buildPhases = (
+				1A15E48D1418EFFF00352873 /* Sources */,
+				1A15E48E1418EFFF00352873 /* Frameworks */,
+				1A15E48F1418EFFF00352873 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JTImageKit;
+			productName = JTImageKit;
+			productReference = 1A15E4911418EFFF00352873 /* JTImageKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A15E4B91418F00000352873 /* JTImageKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A15E4D11418F00100352873 /* Build configuration list for PBXNativeTarget "JTImageKitTests" */;
+			buildPhases = (
+				1A15E4B51418F00000352873 /* Sources */,
+				1A15E4B61418F00000352873 /* Frameworks */,
+				1A15E4B71418F00000352873 /* Resources */,
+				1A15E4B81418F00000352873 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A15E4C11418F00000352873 /* PBXTargetDependency */,
+			);
+			name = JTImageKitTests;
+			productName = JTImageKitTests;
+			productReference = 1A15E4BA1418F00000352873 /* JTImageKitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A15E4881418EFFF00352873 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1A15E48B1418EFFF00352873 /* Build configuration list for PBXProject "JTImageKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1A15E4861418EFFF00352873;
+			productRefGroup = 1A15E4921418EFFF00352873 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A15E4901418EFFF00352873 /* JTImageKit */,
+				1A15E4B91418F00000352873 /* JTImageKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A15E48F1418EFFF00352873 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A15E4A01418EFFF00352873 /* InfoPlist.strings in Resources */,
+				1A15E4AD1418F00000352873 /* MainWindow_iPhone.xib in Resources */,
+				1A15E4B41418F00000352873 /* MainWindow_iPad.xib in Resources */,
+				1A15E4D91418F04900352873 /* sample.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A15E4B71418F00000352873 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A15E4C71418F00100352873 /* InfoPlist.strings in Resources */,
+				1A15E4C91418F00100352873 /* JTImageKitTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A15E4B81418F00000352873 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A15E48D1418EFFF00352873 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A15E4A21418EFFF00352873 /* main.m in Sources */,
+				1A15E4A61418F00000352873 /* JTImageKitAppDelegate.m in Sources */,
+				1A15E4AA1418F00000352873 /* JTImageKitAppDelegate_iPhone.m in Sources */,
+				1A15E4B11418F00000352873 /* JTImageKitAppDelegate_iPad.m in Sources */,
+				1A15E4D71418F01B00352873 /* UIImage+JTImageCrop.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A15E4B51418F00000352873 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A15E4CB1418F00100352873 /* JTImageKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A15E4C11418F00000352873 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A15E4901418EFFF00352873 /* JTImageKit */;
+			targetProxy = 1A15E4C01418F00000352873 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A15E49E1418EFFF00352873 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A15E49F1418EFFF00352873 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1A15E4AB1418F00000352873 /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A15E4AC1418F00000352873 /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		1A15E4B21418F00000352873 /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A15E4B31418F00000352873 /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+		1A15E4C51418F00100352873 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A15E4C61418F00100352873 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A15E4CC1418F00100352873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A15E4CD1418F00100352873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A15E4CF1418F00100352873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JTImageKit/JTImageKit-Prefix.pch";
+				INFOPLIST_FILE = "JTImageKit/JTImageKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1A15E4D01418F00100352873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JTImageKit/JTImageKit-Prefix.pch";
+				INFOPLIST_FILE = "JTImageKit/JTImageKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1A15E4D21418F00100352873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JTImageKit.app/JTImageKit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JTImageKit/JTImageKit-Prefix.pch";
+				INFOPLIST_FILE = "JTImageKitTests/JTImageKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		1A15E4D31418F00100352873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JTImageKit.app/JTImageKit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JTImageKit/JTImageKit-Prefix.pch";
+				INFOPLIST_FILE = "JTImageKitTests/JTImageKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A15E48B1418EFFF00352873 /* Build configuration list for PBXProject "JTImageKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A15E4CC1418F00100352873 /* Debug */,
+				1A15E4CD1418F00100352873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A15E4CE1418F00100352873 /* Build configuration list for PBXNativeTarget "JTImageKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A15E4CF1418F00100352873 /* Debug */,
+				1A15E4D01418F00100352873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1A15E4D11418F00100352873 /* Build configuration list for PBXNativeTarget "JTImageKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A15E4D21418F00100352873 /* Debug */,
+				1A15E4D31418F00100352873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A15E4881418EFFF00352873 /* Project object */;
+}
