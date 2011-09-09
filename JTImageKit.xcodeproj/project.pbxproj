@@ -26,6 +26,8 @@
 		1A15E4CB1418F00100352873 /* JTImageKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A15E4CA1418F00100352873 /* JTImageKitTests.m */; };
 		1A15E4D71418F01B00352873 /* UIImage+JTImageCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A15E4D61418F01B00352873 /* UIImage+JTImageCrop.m */; };
 		1A15E4D91418F04900352873 /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A15E4D81418F04900352873 /* sample.png */; };
+		1AF7ED36141A053E0038A97B /* portrait.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 1AF7ED35141A053E0038A97B /* portrait.JPG */; };
+		1AF7ED3B141A06540038A97B /* JTImageKitPortraitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7ED39141A05A00038A97B /* JTImageKitPortraitTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,9 @@
 		1A15E4D51418F01B00352873 /* UIImage+JTImageCrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JTImageCrop.h"; sourceTree = "<group>"; };
 		1A15E4D61418F01B00352873 /* UIImage+JTImageCrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JTImageCrop.m"; sourceTree = "<group>"; };
 		1A15E4D81418F04900352873 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
+		1AF7ED35141A053E0038A97B /* portrait.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = portrait.JPG; sourceTree = "<group>"; };
+		1AF7ED38141A05A00038A97B /* JTImageKitPortraitTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTImageKitPortraitTest.h; sourceTree = "<group>"; };
+		1AF7ED39141A05A00038A97B /* JTImageKitPortraitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTImageKitPortraitTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +175,8 @@
 			children = (
 				1A15E4C81418F00100352873 /* JTImageKitTests.h */,
 				1A15E4CA1418F00100352873 /* JTImageKitTests.m */,
+				1AF7ED38141A05A00038A97B /* JTImageKitPortraitTest.h */,
+				1AF7ED39141A05A00038A97B /* JTImageKitPortraitTest.m */,
 				1A15E4C31418F00000352873 /* Supporting Files */,
 			);
 			path = JTImageKitTests;
@@ -178,6 +185,7 @@
 		1A15E4C31418F00000352873 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1AF7ED35141A053E0038A97B /* portrait.JPG */,
 				1A15E4D81418F04900352873 /* sample.png */,
 				1A15E4C41418F00100352873 /* JTImageKitTests-Info.plist */,
 				1A15E4C51418F00100352873 /* InfoPlist.strings */,
@@ -265,6 +273,7 @@
 				1A15E4AD1418F00000352873 /* MainWindow_iPhone.xib in Resources */,
 				1A15E4B41418F00000352873 /* MainWindow_iPad.xib in Resources */,
 				1A15E4D91418F04900352873 /* sample.png in Resources */,
+				1AF7ED36141A053E0038A97B /* portrait.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A15E4CB1418F00100352873 /* JTImageKitTests.m in Sources */,
+				1AF7ED3B141A06540038A97B /* JTImageKitPortraitTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +492,7 @@
 				1A15E4D01418F00100352873 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A15E4D11418F00100352873 /* Build configuration list for PBXNativeTarget "JTImageKitTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +501,7 @@
 				1A15E4D31418F00100352873 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

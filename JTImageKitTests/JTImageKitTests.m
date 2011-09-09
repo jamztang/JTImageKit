@@ -63,4 +63,26 @@
     STAssertTrue(croppedImage == self.image, @"Should not return a new image", nil);
 }
 
+- (void)testCGImageCreateWithImageInRelativeRect {
+    CGImageRef sourceImage = self.image.CGImage;
+    CGImageRef targetImage = CGImageCreateWithImageInRelativeRect(sourceImage, CGRectMake(0.5, 0.5, 0.25, 0.5));
+    CGSize targetSize = CGSizeMake(CGImageGetWidth(targetImage), CGImageGetHeight(targetImage));
+    STAssertEquals(targetSize, CGSizeMake(250, 500), @"targetSize %@", NSStringFromCGSize(targetSize));
+    CGImageRelease(targetImage);
+}
+
+- (void)testCGSizeConstrainedInRatio {
+    CGSize size = CGSizeMake(1000, 1000);
+    CGSize newSize = CGSizeConstrainedInRatio(size, CGSizeMake(2, 1));
+    STAssertEquals(newSize, CGSizeMake(1000, 500), @"but newSize is %@", NSStringFromCGSize(newSize));
+}
+
+- (void)testCGImageCreateWithImageInRelativeRectWithRatio {
+    CGImageRef sourceImage = self.image.CGImage;
+    CGImageRef targetImage = CGImageCreateWithImageInRelativeRectWithRatio(sourceImage, CGRectMake(0.5, 0.5, 0.4, 0.5), CGSizeMake(4, 3));
+    CGSize targetSize = CGSizeMake(CGImageGetWidth(targetImage), CGImageGetHeight(targetImage));
+    STAssertEquals(targetSize, CGSizeMake(400, 300), @"targetSize %@", NSStringFromCGSize(targetSize));
+    CGImageRelease(targetImage);
+}
+
 @end

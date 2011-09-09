@@ -15,3 +15,8 @@
 + (UIImage *)imageWithImage:(UIImage *)image cropInRatio:(CGSize)ratio;
 
 @end
+
+CGSize     CGSizeConstrainedInRatio(CGSize originalSize, CGSize ratio);
+CGRect     CGRectTransformToRect(CGRect fromRect, CGRect toRect);
+CGImageRef CGImageCreateWithImageInRelativeRect(CGImageRef image, CGRect rect);
+CGImageRef CGImageCreateWithImageInRelativeRectWithRatio(CGImageRef image, CGRect rect, CGSize ratio);

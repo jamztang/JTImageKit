@@ -29,9 +29,8 @@
         return image;
     }
     
-    CGPoint actualOrigin = (CGPoint){rect.origin.x * image.size.width, rect.origin.y * image.size.height};
-    CGSize  actualSize   = (CGSize){rect.size.width * image.size.width, rect.size.height * image.size.height};
-    CGRect actualRect = (CGRect){actualOrigin, actualSize};
+    CGRect imageRect = (CGRect){CGPointZero, image.size};
+    CGRect actualRect = CGRectTransformToRect(rect, imageRect);
     return [UIImage imageWithImage:image cropInRect:CGRectIntegral(actualRect)];
 }
 
@@ -44,16 +43,46 @@
         return image;
     }
     
-    CGSize targetSize;
-    if (targetRatio > originalRatio) {
-        // image should become less height
-        targetSize = CGSizeMake(image.size.width, image.size.width / targetRatio);
-    } else {
-        // image should become less width
-        targetSize = CGSizeMake(image.size.height * targetRatio, image.size.height);
-        
-    }
+    CGSize targetSize = CGSizeConstrainedInRatio(image.size, ratio);
     return [UIImage imageWithImage:image cropInRect:(CGRect){CGPointZero, targetSize}];
 }
 
 @end
+
+CGSize CGSizeConstrainedInRatio(CGSize originalSize, CGSize ratio) {
+    CGFloat targetRatio = ratio.width / ratio.height;
+    CGFloat originalRatio = originalSize.width / originalSize.height;
+
+    CGSize targetSize;
+    if (targetRatio > originalRatio) {
+        // image should become less height
+        targetSize = CGSizeMake(originalSize.width, originalSize.width / targetRatio);
+    } else {
+        // image should become less width
+        targetSize = CGSizeMake(originalSize.height * targetRatio, originalSize.height);
+    }
+    return targetSize;
+}
+
+CGRect CGRectTransformToRect(CGRect fromRect, CGRect toRect) {
+    CGPoint actualOrigin = (CGPoint){fromRect.origin.x * CGRectGetWidth(toRect), fromRect.origin.y * CGRectGetHeight(toRect)};
+    CGSize  actualSize   = (CGSize){fromRect.size.width * CGRectGetWidth(toRect), fromRect.size.height * CGRectGetHeight(toRect)};
+    return (CGRect){actualOrigin, actualSize};
+}
+
+CGImageRef CGImageCreateWithImageInRelativeRect(CGImageRef image, CGRect rect) {
+    CGRect imageRect = (CGRect){CGPointZero, CGImageGetWidth(image), CGImageGetHeight(image)};
+    return CGImageCreateWithImageInRect(image, CGRectTransformToRect(rect, imageRect));
+}
+
+
+CGImageRef CGImageCreateWithImageInRelativeRectWithRatio(CGImageRef image, CGRect rect, CGSize ratio) {
+    CGRect imageRect = (CGRect){CGPointZero, CGImageGetWidth(image), CGImageGetHeight(image)};
+    CGRect targetRect = (CGRect)CGRectTransformToRect(rect, imageRect);
+    CGSize targetSize = CGSizeConstrainedInRatio(targetRect.size, ratio);
+    // origin should cast to integer, size will be automatically integral by CGImageCreateWithImageInRect
+    targetRect = (CGRect){(int)(0.5+targetRect.origin.x), (int)(0.5+targetRect.origin.y), targetSize};
+    return CGImageCreateWithImageInRect(image, targetRect);
+}
+
+
